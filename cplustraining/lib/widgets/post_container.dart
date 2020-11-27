@@ -1,4 +1,5 @@
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:cplustraining/screens/club_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:cplustraining/config/palette.dart';
@@ -116,7 +117,11 @@ class _postStats extends StatelessWidget {
           child: RaisedButton(
            color: Colors.blue[400],
             onPressed: () {
-              
+               Navigator.push(context,
+            MaterialPageRoute(
+        builder:(context) => ClubPage()
+         ),);
+             
             },
             child: const Text('View Club', 
             style: TextStyle(fontSize: 11 , color: Colors.white)),
