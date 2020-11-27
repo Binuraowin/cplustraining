@@ -9,7 +9,7 @@ final List<User> onlineUsers = [
   User(
     name: 'Drama Club',
     imageUrl:
-        'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+        'https://yt3.ggpht.com/a/AATXAJyU_78h6D94S1Ublccaqn7XKJFr3JQXtzX66b1X=s900-c-k-c0x00ffffff-no-rj',
   
   ),
   User(
@@ -21,7 +21,7 @@ final List<User> onlineUsers = [
   User(
     name: 'Drama Club',
     imageUrl:
-        'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1331&q=80',
+        'https://yt3.ggpht.com/a/AATXAJyU_78h6D94S1Ublccaqn7XKJFr3JQXtzX66b1X=s900-c-k-c0x00ffffff-no-rj',
   ),
   User(
     name: 'Dancing Club',
@@ -31,7 +31,7 @@ final List<User> onlineUsers = [
   User(
     name: 'Drama Club',
     imageUrl:
-        'https://images.unsplash.com/photo-1521119989659-a83eee488004?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=664&q=80',
+        'https://yt3.ggpht.com/a/AATXAJyU_78h6D94S1Ublccaqn7XKJFr3JQXtzX66b1X=s900-c-k-c0x00ffffff-no-rj',
   ),
   User(
     name: 'Dancing Club',
@@ -190,7 +190,7 @@ final List<Post> posts = [
     caption: 'This is a very good boi.',
     timeAgo: '8hr',
     imageUrl:
-        'https://images.unsplash.com/photo-1575535468632-345892291673?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqF92EkoT4WR4d5VzF9ZAnouwudlWyqTQh3g&usqp=CAU',
     likes: 894,
     comments: 201,
     shares: 27,

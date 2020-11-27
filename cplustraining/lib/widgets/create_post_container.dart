@@ -15,20 +15,7 @@ class CreatePostContainer extends StatelessWidget {
       color: Colors.white,
       child: Column(
         children:[
-          // Row(
-          //   children: <Widget>[
-          //     ProfileAvatar(imageUrl: currentUser.imageUrl),
-            
-          //     const SizedBox(width: 8.0), 
-          //     Expanded(
-          //       child:TextField(
-          //       decoration: InputDecoration.collapsed(
-          //          hintText: 'what\s on your mind?'
-          //       )
-          //     )
-          //     )             
-          //   ],
-          // ), 
+     
           const Divider(
             height:10.0,
             thickness:0.5
@@ -56,9 +43,9 @@ class CreatePostContainer extends StatelessWidget {
               icon: const Icon(Icons.settings, color: Colors.purple,), 
               label: Text("Setings")
               ),
-              // const VerticalDivider(
-              //   width:8.0
-              // )
+              const VerticalDivider(
+                width:8.0
+              )
             ]
           )
           )

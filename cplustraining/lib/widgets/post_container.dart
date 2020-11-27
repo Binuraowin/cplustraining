@@ -115,7 +115,9 @@ class _postStats extends StatelessWidget {
           
           child: RaisedButton(
            color: Colors.blue[400],
-            onPressed: () {},
+            onPressed: () {
+              
+            },
             child: const Text('View Club', 
             style: TextStyle(fontSize: 11 , color: Colors.white)),
           ),
