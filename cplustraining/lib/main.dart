@@ -1,3 +1,4 @@
+import 'package:cplustraining/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import './components/home.dart';
 void main() {
@@ -10,13 +11,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
+      // theme: ThemeData(
 
-        primarySwatch: Colors.blue,
+      //   primarySwatch: Colors.blue,
      
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: Home(),
+      //   visualDensity: VisualDensity.adaptivePlatformDensity,
+      // ),
+      home: HomeScreen(),
     );
   }
 }
