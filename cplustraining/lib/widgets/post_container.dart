@@ -39,9 +39,9 @@ class PostContainer extends StatelessWidget {
           )
        
         : const SizedBox.shrink(),
-        // Padding(padding: const EdgeInsets.symmetric(horizontal: 12.0),
-        // child: _postStats(post:post),
-        // )
+        Padding(padding: const EdgeInsets.symmetric(horizontal: 12.0),
+        child: _postStats(post:post),
+        )
         ],
       ) 
        
@@ -93,63 +93,70 @@ class _postHeader  extends StatelessWidget {
   }
 }
 
-// class _postStats extends StatelessWidget {
-//   final Post post;
+class _postStats extends StatelessWidget {
+  final Post post;
 
-//   const _postStats({Key key,@required this.post}) : super(key: key);
-//   @override
-//   Widget build(BuildContext context) {
-//     return Column(
-//       children: <Widget>[
-//           Row(
-//       children: <Widget>[
-//         Container(
-//           padding: const EdgeInsets.all(4.0),
-//           decoration: BoxDecoration(
-//             color: Palette.facebookBlue,
-//             shape: BoxShape.circle,
-//           ),
-//           child: const Icon(
-//             Icons.thumb_up,
-//             size: 10.0,
-//             color: Colors.white,
-//           ),
-//         ),const SizedBox(width: 4.0,),
-//         Expanded(child: Text(
-//           '${post.likes}', style: TextStyle(
-//             color: Colors.grey[600],
-//           ),
-//         ),),
+  const _postStats({Key key,@required this.post}) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: <Widget>[
+          Row(
+      children: <Widget>[
+        Container(
+          width: 100,
+          height: 25,
+          
+          padding: const EdgeInsets.all(4.0),
+          // decoration: BoxDecoration(
+          //   color: Palette.facebookBlue,
+          //   // shape: BoxShape.circle,
+          // ),
+          
+          child: RaisedButton(
+           color: Colors.blue[400],
+            onPressed: () {},
+            child: const Text('View Club', 
+            style: TextStyle(fontSize: 11 , color: Colors.white)),
+          ),
+          //  const Icon(
+          //   Icons.thumb_up,
+          //   size: 10.0,
+          //   color: Colors.white,
+          // ),
+        ),
+        const SizedBox(width: 4.0,),
+       
         
-//         Text(
-//           '${post.comments} Comments', style: TextStyle(
-//             color: Colors.grey[600],
-//           ),
-//         ),
-//         const SizedBox(width:8.0),
-//         Text(
-//           '${post.shares} Shares', style: TextStyle(
-//             color: Colors.grey[600],
-//           ),
-//         )
-//       ],
-//     ),
-//     const Divider(),
-//     Row(
-//       children: <Widget>[
-//         // _PostButton(
-//         //   icon: Icon(
-//         //     MdiIcons.thumbUpOutline,
-//         //     color: Colors.grey[600],
-//         //     size: 20.0,
-//         //   ),
-//         //   label : 'Like',
-//         //   onTap: () => print('Like'),
-//         // )
-//       ],
-//     )
-//       ],
-//     );
+        // Text(
+        //   '${post.comments} Comments', style: TextStyle(
+        //     color: Colors.grey[600],
+        //   ),
+        // ),
+        // const SizedBox(width:8.0),
+        // Text(
+        //   '${post.shares} Shares', style: TextStyle(
+        //     color: Colors.grey[600],
+        //   ),
+        // )
+      ],
+    ),
+    const Divider(),
+    Row(
+      children: <Widget>[
+        // _PostButton(
+        //   icon: Icon(
+        //     MdiIcons.thumbUpOutline,
+        //     color: Colors.grey[600],
+        //     size: 20.0,
+        //   ),
+        //   label : 'Like',
+        //   onTap: () => print('Like'),
+        // )
+      ],
+    )
+      ],
+    );
     
-//   }
-// }
+  }
+}
