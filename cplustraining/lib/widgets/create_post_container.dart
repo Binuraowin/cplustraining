@@ -25,21 +25,21 @@ class CreatePostContainer extends StatelessWidget {
             child:  Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children:[
-              FlatButton.icon(onPressed: () => print("live"), 
+              FlatButton.icon(onPressed: () => print("Club Feed"), 
               icon: const Icon(Icons.flag, color: Colors.red,), 
               label: Text("Club Feed")
               ),
               const VerticalDivider(
                 width:8.0
               ),
-                  FlatButton.icon(onPressed: () => print("photo"), 
+                  FlatButton.icon(onPressed: () => print("My club"), 
               icon: const Icon(Icons.person, color: Colors.green,), 
               label: Text("My club")
               ),
               const VerticalDivider(
                 width:8.0
               ),
-                  FlatButton.icon(onPressed: () => print("Room"), 
+                  FlatButton.icon(onPressed: () => print("Setings"), 
               icon: const Icon(Icons.settings, color: Colors.purple,), 
               label: Text("Setings")
               ),

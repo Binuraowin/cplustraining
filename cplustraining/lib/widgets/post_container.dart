@@ -149,19 +149,19 @@ class _postStats extends StatelessWidget {
       ],
     ),
     const Divider(),
-    Row(
-      children: <Widget>[
-        // _PostButton(
-        //   icon: Icon(
-        //     MdiIcons.thumbUpOutline,
-        //     color: Colors.grey[600],
-        //     size: 20.0,
-        //   ),
-        //   label : 'Like',
-        //   onTap: () => print('Like'),
-        // )
-      ],
-    )
+    // Row(
+    //   children: <Widget>[
+    //     // _PostButton(
+    //     //   icon: Icon(
+    //     //     MdiIcons.thumbUpOutline,
+    //     //     color: Colors.grey[600],
+    //     //     size: 20.0,
+    //     //   ),
+    //     //   label : 'Like',
+    //     //   onTap: () => print('Like'),
+    //     // )
+    //   ],
+    // )
       ],
     );
     
