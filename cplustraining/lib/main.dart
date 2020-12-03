@@ -1,4 +1,6 @@
+import 'package:cplustraining/screens/create_post_screen.dart';
 import 'package:cplustraining/screens/home_screen.dart';
+import 'package:cplustraining/screens/nav_screens.dart';
 import 'package:flutter/material.dart';
 import './components/home.dart';
 void main() {
