@@ -39,42 +39,11 @@ class _ClubPageState extends State<ClubPage> {
       
       body: CustomScrollView(
         slivers:[
-        // SliverAppBar(
-         // brightness: Brightness.light,
-          // backgroundColor: Colors.white,
-          // title: Text(
-          //   'Drama Club',
-          //   style: const TextStyle(
-          //     color:Palette.nsbmgreen,
-          //     fontSize: 28.0,
-          //     fontWeight: FontWeight.bold,
-          //     letterSpacing: -1.2,
-          //   ),
-          // ),
-          // centerTitle: false,
-          // floating: true,
-     
-        // ),
+
         SliverToBoxAdapter(
           child:ClubHeader(currentUser:currentUser),
         ),
-        // SliverPadding(
-        //   padding: const EdgeInsets.fromLTRB( 0.0, 10.0, 0.0, 5.0),
-        //   sliver:  SliverToBoxAdapter(
-        //   child:Rooms(
-        //     onlineUsers: onlineUsers
-        //   )
-        // )
-        //   ),
-        //    SliverPadding(
-        //   padding: const EdgeInsets.fromLTRB( 0.0, 5.0, 0.0, 5.0),
-        //   sliver:  SliverToBoxAdapter(
-        //   child:Stories(
-        //     currentUser: currentUser,
-        //     stories: stories,
-        //   )
-        // )
-        //   ),
+
       SliverList(
         delegate: SliverChildBuilderDelegate((context, index){
           final Post post = posts[index];
