@@ -3,16 +3,10 @@ import 'package:cplustraining/screens/club_screen.dart';
 import 'package:cplustraining/widgets/profile_avatar.dart';
 import 'package:flutter/material.dart';
 
-class EventContainer extends StatefulWidget {
+class EventContainer extends StatelessWidget {
   final Post post;
 
   const EventContainer({Key key, this.post}) : super(key: key);
-  
-  @override
-  _EventContainerState createState() => _EventContainerState();
-}
-
-class _EventContainerState extends State<EventContainer> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -88,9 +82,9 @@ class _postHeader  extends StatelessWidget {
           ],
         )
           ),
-        IconButton(icon: const Icon(Icons.more_horiz),
-         onPressed: () => print('More'),
-         )
+        // IconButton(icon: const Icon(Icons.more_horiz),
+        //  onPressed: () => print('More'),
+        //  )
       ],
     );
   }
@@ -105,65 +99,45 @@ class _postStats extends StatelessWidget {
     return Column(
       children: <Widget>[
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: <Widget>[
         Container(
+          
           width: 100,
-          height: 25,
-          
+          height: 25,         
           padding: const EdgeInsets.all(4.0),
-          // decoration: BoxDecoration(
-          //   color: Palette.facebookBlue,
-          //   // shape: BoxShape.circle,
-          // ),
-          
           child: RaisedButton(
            color: Colors.blue[400],
             onPressed: () {
                Navigator.push(context,
             MaterialPageRoute(
         builder:(context) => ClubPage()
-         ),);
-             
+         ),); 
             },
             child: const Text('View Club', 
             style: TextStyle(fontSize: 11 , color: Colors.white)),
           ),
-          //  const Icon(
-          //   Icons.thumb_up,
-          //   size: 10.0,
-          //   color: Colors.white,
-          // ),
         ),
         const SizedBox(width: 4.0,),
-       
-        
-        // Text(
-        //   '${post.comments} Comments', style: TextStyle(
-        //     color: Colors.grey[600],
-        //   ),
-        // ),
-        // const SizedBox(width:8.0),
-        // Text(
-        //   '${post.shares} Shares', style: TextStyle(
-        //     color: Colors.grey[600],
-        //   ),
-        // )
+          Container(
+          
+          width: 140,
+          height: 25,         
+          padding: const EdgeInsets.all(4.0),
+          child: RaisedButton(
+           color: Colors.blue[400],
+            onPressed: () {
+            print("Register");
+            },
+            child: const Text('Register Event', 
+            style: TextStyle(fontSize: 11 , color: Colors.white)),
+          ),
+        ),
+
       ],
     ),
     const Divider(),
-    // Row(
-    //   children: <Widget>[
-    //     // _PostButton(
-    //     //   icon: Icon(
-    //     //     MdiIcons.thumbUpOutline,
-    //     //     color: Colors.grey[600],
-    //     //     size: 20.0,
-    //     //   ),
-    //     //   label : 'Like',
-    //     //   onTap: () => print('Like'),
-    //     // )
-    //   ],
-    // )
+
       ],
     );
     

@@ -86,9 +86,9 @@ class _postHeader  extends StatelessWidget {
           ],
         )
           ),
-        IconButton(icon: const Icon(Icons.more_horiz),
-         onPressed: () => print('More'),
-         )
+        // IconButton(icon: const Icon(Icons.more_horiz),
+        //  onPressed: () => print('More'),
+        //  )
       ],
     );
   }

@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cplustraining/models/joinform_model.dart';
+import 'package:cplustraining/screens/event_screen.dart';
 import 'package:cplustraining/screens/home_screen.dart';
 import 'package:cplustraining/screens/join_screen.dart';
 import 'package:flutter/material.dart';
@@ -54,7 +55,12 @@ class ClubHeader extends StatelessWidget {
               const VerticalDivider(
                 width:8.0
               ),
-                  FlatButton.icon(onPressed: () => print("Events"), 
+                  FlatButton.icon(onPressed: () {
+                             Navigator.push(context,
+            MaterialPageRoute(
+        builder:(context) => EventPage()
+         ),);
+                  }, 
               icon: const Icon(Icons.flare, color: Colors.purple,), 
               label: Text("Events")
               ),
