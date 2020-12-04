@@ -14,13 +14,13 @@ class _ClubListPageState extends State<ClubListPage> {
   Widget build(BuildContext context) {
     return Scaffold(
        appBar:AppBar(
-        leading: IconButton(
-          icon: Icon(Icons.arrow_back_ios,
-          color: Palette.facebookBlue,
-          ), 
-          onPressed: (){
-            Navigator.of(context).pop();
-          }),
+//        leading: IconButton(
+//          icon: Icon(Icons.arrow_back_ios,
+//          color: Palette.facebookBlue,
+//          ),
+//          onPressed: (){
+//            Navigator.of(context).pop();
+//          }),
           brightness: Brightness.light,
           backgroundColor: Colors.white,
           title: Text(
