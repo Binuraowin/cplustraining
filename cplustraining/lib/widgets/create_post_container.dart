@@ -16,7 +16,21 @@ class CreatePostContainer extends StatelessWidget {
       color: Colors.white,
       child: Column(
         children:[
-     
+          Row(
+            children: <Widget>[
+              ProfileAvatar(imageUrl: currentUser.imageUrl),
+
+              const SizedBox(width: 8.0),
+              Expanded(
+                  child:Text(currentUser.name,
+                    style: const TextStyle(
+                        fontWeight: FontWeight.w600
+                    ),
+                  )
+              )
+            ],
+          ),
+
           const Divider(
             height:10.0,
             thickness:0.5
