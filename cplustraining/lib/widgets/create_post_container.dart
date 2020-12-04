@@ -1,4 +1,5 @@
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:cplustraining/screens/club_list.dart';
 import 'package:flutter/material.dart';
 import 'package:cplustraining/data/data.dart';
 import 'package:cplustraining/models/models.dart';
@@ -25,7 +26,14 @@ class CreatePostContainer extends StatelessWidget {
             child:  Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children:[
-              FlatButton.icon(onPressed: () => print("Club Feed"), 
+              FlatButton.icon(onPressed: () {
+                Navigator.push(context,
+                  MaterialPageRoute(
+                      builder:(context) => ClubListPage(
+
+                      )
+                  ),);
+              },
               icon: const Icon(Icons.flag, color: Colors.red,), 
               label: Text("Club Feed")
               ),
