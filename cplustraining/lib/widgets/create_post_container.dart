@@ -52,22 +52,29 @@ class CreatePostContainer extends StatelessWidget {
               label: Text("Club Feed")
               ),
               const VerticalDivider(
-                width:8.0
+                width:4.0
               ),
                   FlatButton.icon(onPressed: () => print("My club"), 
               icon: const Icon(Icons.person, color: Colors.green,), 
               label: Text("My club")
               ),
               const VerticalDivider(
-                width:8.0
+                  width:4.0
               ),
-                  FlatButton.icon(onPressed: () => print("Setings"), 
-              icon: const Icon(Icons.settings, color: Colors.purple,), 
-              label: Text("Setings")
+                  FlatButton.icon(onPressed: () => print("Add Post"),
+              icon: const Icon(Icons.event, color: Colors.purple,),
+              label: Text("Add Event")
               ),
               const VerticalDivider(
-                width:8.0
-              )
+                  width:4.0
+              ),
+              FlatButton.icon(onPressed: () => print("Add Event"),
+                  icon: const Icon(Icons.event, color: Colors.purple,),
+                  label: Text("Setings")
+              ),
+              const VerticalDivider(
+                  width:4.0
+              ),
             ]
           )
           )

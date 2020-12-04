@@ -30,10 +30,10 @@ class HomeScreen extends StatelessWidget {
            floating: true,
 
         ),
-        SliverToBoxAdapter(
-          child:CreatePostContainer(currentUser:currentUser),
-        ),
-  
+//        SliverToBoxAdapter(
+//          child:CreatePostContainer(currentUser:currentUser),
+//        ),
+//
       SliverList(
         delegate: SliverChildBuilderDelegate((context, index){
           final Post post = posts[index];
