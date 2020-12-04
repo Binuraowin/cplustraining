@@ -1,3 +1,4 @@
+import 'package:cplustraining/screens/club_list.dart';
 import 'package:cplustraining/screens/create_post_screen.dart';
 import 'package:cplustraining/screens/home_screen.dart';
 import 'package:cplustraining/screens/nav_screens.dart';
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
      
       //   visualDensity: VisualDensity.adaptivePlatformDensity,
       // ),
-      home: HomeScreen(),
+      home: ClubListPage(),
     );
   }
 }
