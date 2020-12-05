@@ -5,8 +5,11 @@ class CustomTabBar extends StatelessWidget {
   final List<IconData> icons;
   final int selectedIndex;
   final Function(int) onTap;
+  final List<Color> colors;
 
-  const CustomTabBar({Key key,@required this.icons,@required this.selectedIndex,@required this.onTap}) : super(key: key);
+  const CustomTabBar({Key key, this.icons, this.selectedIndex, this.onTap, this.colors}) : super(key: key);
+
+
   @override
   Widget build(BuildContext context) {
     return TabBar(
@@ -23,7 +26,7 @@ class CustomTabBar extends StatelessWidget {
         icons.asMap().map((i,e) =>MapEntry( i,
           Tab(icon: Icon(e,
           color: i == selectedIndex 
-          ? Palette.facebookBlue: Colors.black45,
+          ? Palette.facebookBlue: Colors.grey,
           size: 30.0
           ,
           ),)

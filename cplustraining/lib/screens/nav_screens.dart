@@ -1,3 +1,4 @@
+import 'package:cplustraining/screens/club_admin.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:cplustraining/screens/home_screen.dart';
@@ -10,28 +11,31 @@ class NavScreen extends StatefulWidget {
 
 class _NavScreenState extends State<NavScreen> {
     final List<Widget> _screens = [
-    Scaffold(),
+
     HomeScreen(),
+      AdminPage(),
     Scaffold(),
     Scaffold(),
-    // Scaffold(),
-    // Scaffold(),
+     Scaffold(),
+     Scaffold(),
   ];
     final List<IconData> _icons = const [
-    Icons.flag,
+//    Icons.flag,
     Icons.home,
+      Icons.person,
+      MdiIcons.plus,
     Icons.people,
-    Icons.settings,
-    // MdiIcons.bellOutline,
-    // Icons.menu,
+    Icons.event,
+
   ];
 
-  final List<Color> _colors = const[
-    Colors.red,
-    Colors.blue,
-    Colors.green,
-    Colors.purple
-  ];
+//  final List<Color> _colors = const[
+//    Colors.red,
+//    Colors.blue,
+//    Colors.green,
+//    Colors.purple,
+//    Colors.purple
+//  ];
   int _selectedIndex = 0;
   @override
   Widget build(BuildContext context) {

@@ -68,13 +68,13 @@ class CreatePostContainer extends StatelessWidget {
               const VerticalDivider(
                   width:4.0
               ),
-              FlatButton.icon(onPressed: () => print("Add Event"),
-                  icon: const Icon(Icons.event, color: Colors.purple,),
-                  label: Text("Setings")
-              ),
-              const VerticalDivider(
-                  width:4.0
-              ),
+//              FlatButton.icon(onPressed: () => print("Add Event"),
+//                  icon: const Icon(Icons.event, color: Colors.purple,),
+//                  label: Text("Setings")
+//              ),
+//              const VerticalDivider(
+//                  width:4.0
+//              ),
             ]
           )
           )

@@ -2,6 +2,7 @@
 import 'package:cplustraining/models/models.dart';
 import 'package:cplustraining/widgets/profile_avatar.dart';
 import 'package:flutter/material.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class AdminPost extends StatelessWidget {
   final Post post;
@@ -97,15 +98,20 @@ class _postStats extends StatelessWidget {
     return Column(
       children: <Widget>[
         Row(
+    mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             Container(
-              width: 100,
-              height: 25,
+
+              width: 50,
+              height: 45,
 
               padding: const EdgeInsets.all(4.0),
 
               child: RaisedButton(
-                color: Colors.blue[400],
+
+
+                color: Colors.white,
+                elevation: 0,
                 onPressed: () {
                   Navigator.push(context,
                     MaterialPageRoute(
@@ -113,12 +119,48 @@ class _postStats extends StatelessWidget {
                     ),);
 
                 },
-                child: const Text('Edit',
-                    style: TextStyle(fontSize: 11 , color: Colors.white)),
+                child:Align(
+                  alignment: Alignment.center,
+                  child:const Icon(MdiIcons.commentEdit, size: 18,color: Colors.blue,),
+                )
+
+
+//                child: const Text('Edit',
+//                 style: TextStyle(fontSize: 11 , color: Colors.white)),
               ),
 
             ),
             const SizedBox(width: 4.0,),
+            Container(
+
+              width: 50,
+              height: 45,
+
+              padding: const EdgeInsets.all(4.0),
+
+              child: RaisedButton(
+
+
+                  color: Colors.white,
+                  elevation: 0,
+                  onPressed: () {
+                    Navigator.push(context,
+                      MaterialPageRoute(
+                          builder:(context) => null
+                      ),);
+
+                  },
+                  child:Align(
+                    alignment: Alignment.center,
+                    child:const Icon(MdiIcons.delete, size: 18,color: Colors.red,),
+                  )
+
+
+//                child: const Text('Edit',
+//                 style: TextStyle(fontSize: 11 , color: Colors.white)),
+              ),
+
+            ),
 
           ],
         ),

@@ -35,9 +35,9 @@ class _AdminPageState extends State<AdminPage> {
               floating: true,
 
             ),
-            SliverToBoxAdapter(
-              child:CreatePostContainer(currentUser:currentUser),
-            ),
+//            SliverToBoxAdapter(
+//              child:CreatePostContainer(currentUser:currentUser),
+//            ),
 
             SliverList(
               delegate: SliverChildBuilderDelegate((context, index){
